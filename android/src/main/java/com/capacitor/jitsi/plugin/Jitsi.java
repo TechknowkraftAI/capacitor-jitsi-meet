@@ -100,7 +100,9 @@ public class Jitsi extends Plugin {
         }
 
         // default PiP is off, but allowing user to overrides it by providing the featureFlag below
-        builder.setFeatureFlag("pip.enabled", false);
+        if(call.getBoolean("pip.enabled") != null){
+            builder.setFeatureFlag("pip.enabled", call.getBoolean("pip.enabled"));
+        }
 
         // general settings can be overridden by subsequent featureFlags settings
         if(call.getBoolean("chatEnabled") != null){
