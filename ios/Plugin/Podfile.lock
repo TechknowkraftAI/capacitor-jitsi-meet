@@ -2,46 +2,26 @@ PODS:
   - Capacitor (3.2.4):
     - CapacitorCordova
   - CapacitorCordova (3.2.4)
-  - Giphy (2.1.20):
-    - libwebp
-  - JitsiMeetSDK (8.6.3):
-    - Giphy (= 2.1.20)
-    - JitsiWebRTC (~> 111.0)
-  - JitsiWebRTC (111.0.2)
-  - libwebp (1.3.2):
-    - libwebp/demux (= 1.3.2)
-    - libwebp/mux (= 1.3.2)
-    - libwebp/sharpyuv (= 1.3.2)
-    - libwebp/webp (= 1.3.2)
-  - libwebp/demux (1.3.2):
-    - libwebp/webp
-  - libwebp/mux (1.3.2):
-    - libwebp/demux
-  - libwebp/sharpyuv (1.3.2)
-  - libwebp/webp (1.3.2):
-    - libwebp/sharpyuv
+  - JitsiMeetSDK (1.0.0)
 
 DEPENDENCIES:
   - Capacitor
-  - JitsiMeetSDK (= 8.6.3)
+  - JitsiMeetSDK (from `./sdk/out/JitsiMeetSDK.podspec`)
 
 SPEC REPOS:
   trunk:
     - Capacitor
     - CapacitorCordova
-    - Giphy
-    - JitsiMeetSDK
-    - JitsiWebRTC
-    - libwebp
+
+EXTERNAL SOURCES:
+  JitsiMeetSDK:
+    :path: "./sdk/out/JitsiMeetSDK.podspec"
 
 SPEC CHECKSUMS:
   Capacitor: 300df90a0f1b4da09e7937dadc8ce4ef11b14412
   CapacitorCordova: 0311a1eecf9befe729ef3e9914bb072c12a35511
-  Giphy: b6d5087521d251bb8c99cdc0eb07bbdf86d142d5
-  JitsiMeetSDK: 307cff192e1e95008fe4a6fcad277950ba15d5ea
-  JitsiWebRTC: 80f62908fcf2a1160e0d14b584323fb6e6be630b
-  libwebp: 1786c9f4ff8a279e4dac1e8f385004d5fc253009
+  JitsiMeetSDK: 1892c9ebc0738df1243b9df7e580bfd6974a8168
 
-PODFILE CHECKSUM: 23a8dcccc5a43030f80a3666f585ec6a77fab3b0
+PODFILE CHECKSUM: 181bf036a0e18b34646bd1f2cc69ded8ff6786ae
 
 COCOAPODS: 1.11.3
