@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '9.0'
     
     # Specify the location of the framework
-    s.vendored_frameworks = 'sdk/out/JitsiMeetSDK.xcframework'
+    s.vendored_frameworks = './out/JitsiMeetSDK.xcframework'
   
     # Specify any dependencies if needed
     # s.dependency 'SomeOtherPod'

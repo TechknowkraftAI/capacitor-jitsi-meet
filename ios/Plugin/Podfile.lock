@@ -6,7 +6,7 @@ PODS:
 
 DEPENDENCIES:
   - Capacitor
-  - JitsiMeetSDK (from `./sdk/out/JitsiMeetSDK.podspec`)
+  - JitsiMeetSDK (from `./sdk/JitsiMeetSDK.podspec`)
 
 SPEC REPOS:
   trunk:
@@ -15,13 +15,13 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   JitsiMeetSDK:
-    :path: "./sdk/out/JitsiMeetSDK.podspec"
+    :path: "./sdk/JitsiMeetSDK.podspec"
 
 SPEC CHECKSUMS:
   Capacitor: 300df90a0f1b4da09e7937dadc8ce4ef11b14412
   CapacitorCordova: 0311a1eecf9befe729ef3e9914bb072c12a35511
-  JitsiMeetSDK: 1892c9ebc0738df1243b9df7e580bfd6974a8168
+  JitsiMeetSDK: 9113007fb4b0741b3d122a01fee2fb0e3b4ca70d
 
-PODFILE CHECKSUM: 181bf036a0e18b34646bd1f2cc69ded8ff6786ae
+PODFILE CHECKSUM: d0db2286fb589d9ff35fd96107d71714d1b3044b
 
 COCOAPODS: 1.11.3
