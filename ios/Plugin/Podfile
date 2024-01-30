@@ -8,8 +8,8 @@ platform :ios, '13.0'
 
     # Pods for IonicRunner
     pod 'Capacitor'
-    #pod 'JitsiMeetSDK', '8.6.3'
-    pod 'JitsiMeetSDK', :path => './sdk/JitsiMeetSDK.podspec'
+    pod 'JitsiMeetSDK', '8.6.3'
+    #pod 'JitsiMeetSDK', :path => './sdk/JitsiMeetSDK.podspec'
   end
 
 post_install do |installer|
@@ -24,6 +24,6 @@ target 'PluginTests' do
   use_frameworks!
 
   pod 'Capacitor'
-  #pod 'JitsiMeetSDK', '8.6.3'
-  pod 'JitsiMeetSDK', :path => './sdk/JitsiMeetSDK.podspec'
+  pod 'JitsiMeetSDK', '8.6.3'
+  #pod 'JitsiMeetSDK', :path => './sdk/JitsiMeetSDK.podspec'
 end
