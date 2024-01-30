@@ -1,4 +1,3 @@
-
   Pod::Spec.new do |s|
     s.name = 'CapacitorJitsiMeet'
     s.version = '4.1.0'
@@ -15,5 +14,5 @@
     }
     s.ios.deployment_target  = '13.0'
     s.dependency 'Capacitor'
-    #s.dependency 'JitsiMeetSDK', '8.6.3'
+    s.dependency 'JitsiMeetSDK', '8.6.3'
   end
