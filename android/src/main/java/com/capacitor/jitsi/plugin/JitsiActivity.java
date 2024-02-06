@@ -14,6 +14,7 @@ import timber.log.Timber;
 import com.facebook.react.bridge.UiThreadUtil;
 
 import org.jitsi.meet.sdk.*;
+import java.util.HashMap;
 
 public class JitsiActivity extends JitsiMeetActivity {
     private BroadcastReceiver broadcastReceiver;
@@ -67,7 +68,10 @@ public class JitsiActivity extends JitsiMeetActivity {
                     on("onConferenceWillJoin");
                     break;
                 case CONFERENCE_TERMINATED:
-                    finish();
+                    HashMap<String, Object> data = event.getData();
+                    if (data.containsKey("error")) {
+                        finish();
+                    }
                     on("onConferenceLeft"); // intentionally uses the obsolete onConferenceLeft in order to be consistent with iOS deployment and broadcast to JS listeners
                     break;
                 case READY_TO_CLOSE:
