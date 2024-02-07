@@ -96,9 +96,10 @@ extension JitsiMeetViewController: JitsiMeetViewDelegate {
 
     @objc public func conferenceTerminated(_ data: [AnyHashable : Any]!) {
         print("[Jitsi Plugin Native iOS]: JitsiMeetViewController::conference terminated");
-        delegate?.onConferenceLeft()
-        self.cleanUp()
-
-        self.dismiss(animated: true, completion: nil); // e.g. user ends the call. This is preferred over conferenceLeft to shorten the white screen while exiting the room
+        if let errorValue = data["error"] {
+            delegate?.onConferenceLeft()
+            self.cleanUp()
+            self.dismiss(animated: true, completion: nil); // e.g. user ends the call. This is preferred over conferenceLeft to shorten the white screen while exiting the room
+        }
     }
 }
